@@ -91,7 +91,8 @@ public class CandidateView extends View {
         
         mPaint = new Paint();
         mPaint.setColor(mColorNormal);
-        mPaint.setAntiAlias(true);
+        mPaint.setAntiAlias(false);
+        mPaint.setFakeBoldText(false);
         mPaint.setTextSize(r.getDimensionPixelSize(R.dimen.candidate_font_height));
         mPaint.setStrokeWidth(0);
         
@@ -198,7 +199,7 @@ public class CandidateView extends View {
 
             if (canvas != null) {
                 if ((i == 1 && !typedWordValid) || (i == 0 && typedWordValid)) {
-                    paint.setFakeBoldText(true);
+                    //paint.setFakeBoldText(true);
                     paint.setColor(mColorRecommended);
                 } else if (i != 0) {
                     paint.setColor(mColorOther);
@@ -207,7 +208,7 @@ public class CandidateView extends View {
                 paint.setColor(mColorOther); 
                 canvas.drawLine(x + wordWidth + 0.5f, bgPadding.top, 
                         x + wordWidth + 0.5f, height + 1, paint);
-                paint.setFakeBoldText(false);
+                //paint.setFakeBoldText(false);
             }
             x += wordWidth;
         }

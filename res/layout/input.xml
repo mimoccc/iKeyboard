@@ -24,4 +24,14 @@
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:keyPreviewLayout="@layout/keypreview"
+        android:keyPreviewOffset="5sp"
+        android:keyTextColor="@android:color/black"
+        android:keyTextSize="20px"
+        android:shadowColor="@android:color/transparent"
+        
         />
+        <!--   android:background="@android:color/transparent"
+         android:keyBackground="@android:color/white"
+        android:keyTextColor="@android:color/black"
+                android:background="@drawable/logo6w" -->

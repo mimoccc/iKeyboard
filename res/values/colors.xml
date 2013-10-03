@@ -19,8 +19,8 @@
 */
 -->
 <resources>
-    <color name="candidate_normal">#FF000000</color>
-    <color name="candidate_recommended">#FFE35900</color>
-    <color name="candidate_other">#ff808080</color>
-    <color name="candidate_background">#FF000000</color>
+    <color name="candidate_normal">#000000</color>
+    <color name="candidate_recommended">#000000</color>
+    <color name="candidate_other">#000000</color>
+    <color name="candidate_background">#000000</color>
 </resources>
