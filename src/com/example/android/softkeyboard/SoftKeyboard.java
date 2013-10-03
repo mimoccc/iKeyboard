@@ -681,8 +681,8 @@ public class SoftKeyboard extends InputMethodService
     public void swipeLeft() {
         handleBackspace();
     }
-
     public void swipeDown() {
+    	// check to disable if user swipe down
         handleClose();
     }
 
@@ -690,12 +690,8 @@ public class SoftKeyboard extends InputMethodService
     }
     
     public void onPress(int primaryCode) {
-    	/*if (primaryCode == -5 || primaryCode == 10 || primaryCode ==  32 
-    			|| primaryCode == -2 || primaryCode == -1) {
-    		mInputView.setPreviewEnabled(false);
-    	}*/
     	System.out.println(primaryCode);
-    	if (primaryCode == -5 || primaryCode == 10 || primaryCode == 32 || primaryCode == -2 || primaryCode == -1) {
+    	if (primaryCode == -5 || primaryCode == 10 || primaryCode == 32 || primaryCode == -2 || primaryCode == -1 || primaryCode == -3) {
     		mInputView.setPreviewEnabled(false);
     	}
     	else {

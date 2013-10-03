@@ -87,7 +87,9 @@ public class LatinKeyboard extends Keyboard {
 
     void setSpaceIcon(final Drawable icon) {
         if (mSpaceKey != null) {
-            mSpaceKey.icon = icon;
+        	mSpaceKey.icon = null;
+        	//mSpaceKey.label = "space";
+            //mSpaceKey.icon = icon;
         }
     }
 

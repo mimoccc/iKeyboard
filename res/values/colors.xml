@@ -22,5 +22,5 @@
     <color name="candidate_normal">#FF000000</color>
     <color name="candidate_recommended">#FFE35900</color>
     <color name="candidate_other">#ff808080</color>
-    <color name="candidate_background">#1e2126</color>
+    <color name="candidate_background">#FF000000</color>
 </resources>
